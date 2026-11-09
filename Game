@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>عالم الأميرة الذكية هيلين ✨</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; touch-action: manipulation; }
+        html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; overscroll-behavior: none; font-family: 'Cairo', sans-serif; background: linear-gradient(135deg, #FFF0F7 0%, #F3E8FF 50%, #E0F2FE 100%); }
+        .magic-bg { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+        .floating-cloud { position: absolute; opacity: 0.65; animation: floatCloud 22s infinite ease-in-out alternate; }
+        @keyframes floatCloud { 0% { transform: translateX(-30px); } 100% { transform: translateX(40px) translateY(-18px); } }
+        .kid-btn { transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease; box-shadow: 0 8px 0 rgba(0, 0, 0, 0.12), 0 12px 20px rgba(168, 85, 247, 0.15); }
+        .kid-btn:active { transform: translateY(4px) scale(0.97); box-shadow: 0 3px 0 rgba(0, 0, 0, 0.12); }
+        .kid-btn:disabled { opacity: 0.4; box-shadow: none; }
+        @keyframes pulseGlow { 0%, 100% { transform: scale(1); filter: drop-shadow(0 0 8px rgba(255, 126, 179, 0.5)); } 50% { transform: scale(1.06); filter: drop-shadow(0 0 18px rgba(168, 85, 247, 0.8)); } }
+        .angel-avatar { animation: pulseGlow 3s infinite ease-in-out; }
+        @keyframes floatSlow { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+        .float-card { animation: floatSlow 4s infinite ease-in-out; }
+        .perspective-1000 { perspective: 1000px; }
+        .card-inner { position: relative; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); transform-style: preserve-3d; }
+        .card-flipped .card-inner { transform: rotateY(180deg); }
+        .card-face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 1.5rem; display: flex; align-items: center; justify-content: center; }
+        .card-back { transform: rotateY(180deg); }
+        @keyframes gentleShake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-8px) rotate(-3deg); } 75% { transform: translateX(8px) rotate(3deg); } }
+        .shake-gentle { animation: gentleShake 0.45s ease-in-out; }
+        @keyframes trainMove { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-5px); } }
+        .train-chug { animation: trainMove 0.6s infinite ease-in-out; }
+        .train-depart { transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1); transform: translateX(130vw) !important; }
+        .game-card { flex: 0 0 auto; width: calc(50% - 0.5rem); max-width: 190px; min-height: 155px; }
+        @media (min-width: 640px) { .game-card { width: 170px; min-height: 175px; } }
+        @media (min-width: 1024px) { .game-card { width: 175px; min-height: 185px; } }
+        @keyframes recordingPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); } 50% { box-shadow: 0 0 0 14px rgba(239, 68, 68, 0); } }
+        .recording-active { animation: recordingPulse 1.2s infinite; }
+        @keyframes numberBounce { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); } }
+        .number-bounce { animation: numberBounce 0.6s ease-in-out infinite; }
+        @keyframes wizardSlide { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .wiz-slide { animation: wizardSlide 0.3s ease-out; }
+    </style>
+</head>
+<body class="relative flex flex-col justify-between h-full w-full select-none overflow-hidden">
+
+    <div class="magic-bg">
+        <svg class="floating-cloud top-6 right-10 w-36 h-24 text-white" viewBox="0 0 120 80" fill="currentColor"><path d="M35 65h55c14 0 25-11 25-25 0-12-9-23-21-24C89 6 77 0 64 0 47 0 33 12 30 28 16 29 5 40 5 54c0 6 5 11 30 11z"/></svg>
+        <svg class="floating-cloud top-20 left-12 w-44 h-28 text-white" style="animation-delay: -7s;" viewBox="0 0 120 80" fill="currentColor"><path d="M35 65h55c14 0 25-11 25-25 0-12-9-23-21-24C89 6 77 0 64 0 47 0 33 12 30 28 16 29 5 40 5 54c0 6 5 11 30 11z"/></svg>
+        <svg class="floating-cloud bottom-12 right-1/4 w-40 h-24 text-white" style="animation-delay: -14s;" viewBox="0 0 120 80" fill="currentColor"><path d="M35 65h55c14 0 25-11 25-25 0-12-9-23-21-24C89 6 77 0 64 0 47 0 33 12 30 28 16 29 5 40 5 54c0 6 5 11 30 11z"/></svg>
+    </div>
+
+    <canvas id="fxCanvas" class="fixed inset-0 pointer-events-none z-50 w-full h-full"></canvas>
+
+    <header class="relative z-20 flex items-center justify-between px-3 sm:px-6 py-2.5 bg-white/80 backdrop-blur-md border-b-4 border-pink-200 shadow-sm">
+        <div class="flex items-center gap-2 sm:gap-3">
+            <button id="angelSpeakBtn" onclick="triggerGreeting()" class="angel-avatar relative w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-tr from-pink-400 via-purple-400 to-sky-300 p-1 shadow-lg flex items-center justify-center cursor-pointer active:scale-90 transition">
+                <div class="w-full h-full bg-white rounded-full flex items-center justify-center overflow-hidden">
+                    <svg class="w-12 h-12" viewBox="0 0 100 100">
+                        <ellipse cx="50" cy="14" rx="22" ry="6" fill="none" stroke="#FBBF24" stroke-width="4" />
+                        <path d="M22 55 C20 28, 80 28, 78 55 C82 70, 75 85, 68 85 C65 75, 35 75, 32 85 C25 85, 18 70, 22 55 Z" fill="#582F0E"/>
+                        <circle cx="50" cy="54" r="22" fill="#FFE5D9"/>
+                        <circle cx="37" cy="58" r="4.5" fill="#FF8FA3" opacity="0.7"/>
+                        <circle cx="63" cy="58" r="4.5" fill="#FF8FA3" opacity="0.7"/>
+                        <path d="M38 50 Q41 45 44 50" stroke="#3B2818" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <path d="M56 50 Q59 45 62 50" stroke="#3B2818" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <path d="M43 61 Q50 68 57 61" stroke="#E11D48" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <path d="M32 34 L38 20 L50 30 L62 20 L68 34 Z" fill="#FBBF24" stroke="#F59E0B" stroke-width="2" stroke-linejoin="round"/>
+                        <circle cx="50" cy="27" r="2.5" fill="#EC4899"/>
+                    </svg>
+                </div>
+                <span class="absolute -bottom-1 -left-1 bg-amber-400 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs shadow">🔊</span>
+            </button>
+            <div>
+                <h1 class="text-lg sm:text-2xl font-black bg-gradient-to-l from-pink-600 via-purple-600 to-sky-600 bg-clip-text text-transparent">الأميرة الذكية هيلين ✨</h1>
+                <p id="subtitleSpeech" class="text-xs sm:text-sm font-bold text-purple-600 truncate max-w-[180px] sm:max-w-md">أهلاً يا هيلين يا قمر! 💖</p>
+            </div>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-3">
+            <div onclick="celebrateStars()" class="cursor-pointer flex items-center gap-1.5 bg-gradient-to-r from-amber-100 to-yellow-200 border-2 border-amber-400 px-3 py-1.5 rounded-full shadow-sm active:scale-95 transition">
+                <svg class="w-6 h-6 sm:w-7 sm:h-7 text-amber-500 drop-shadow" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span id="starCountDisplay" class="text-lg sm:text-xl font-black text-amber-800">0</span>
+            </div>
+            <button id="homeBtn" onclick="goHome()" class="hidden kid-btn bg-gradient-to-b from-pink-400 to-rose-500 text-white p-2.5 sm:px-4 sm:py-2 rounded-2xl font-extrabold flex items-center gap-1.5 border-2 border-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                <span class="hidden sm:inline text-sm">الرئيسية</span>
+            </button>
+            <button id="muteBtn" onclick="toggleAudioMute()" class="bg-purple-100 hover:bg-purple-200 text-purple-700 p-2.5 rounded-2xl border-2 border-purple-300 transition active:scale-90">
+                <span id="muteIcon" class="text-xl">🔔</span>
+            </button>
+            <button onclick="openWizard()" class="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-3 py-2 rounded-2xl border-2 border-white text-xs sm:text-sm font-bold flex items-center gap-1 transition active:scale-95 shadow-lg">
+                <span>🎙️</span>
+                <span class="hidden md:inline">صوتي لهيلين</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="relative z-10 flex-1 w-full max-w-6xl mx-auto p-2 sm:p-4 flex flex-col items-center justify-center overflow-hidden">
+
+        <section id="lobbyScreen" class="w-full h-full flex flex-col justify-center items-center gap-3">
+            <div class="bg-white/85 backdrop-blur-md border-4 border-pink-300 rounded-3xl px-4 py-2.5 shadow-md flex items-center gap-3 max-w-3xl w-full justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="text-3xl sm:text-4xl animate-bounce">🧚‍♀️</span>
+                    <div>
+                        <h2 class="text-base sm:text-lg font-black text-purple-800">يلا يا هيلين نشغل عقلنا الذكي!</h2>
+                        <p class="text-xs sm:text-sm text-pink-600 font-bold">٧ ألعاب تنمي ذكاءك يا قمر</p>
+                    </div>
+                </div>
+                <button onclick="speak('welcome')" class="kid-btn bg-gradient-to-r from-pink-500 to-purple-500 text-white px-3 py-2 rounded-2xl font-bold text-xs sm:text-sm shrink-0">كلميني 🪽</button>
+            </div>
+
+            <div class="flex flex-wrap justify-center items-stretch gap-2.5 sm:gap-4 w-full flex-1 overflow-y-auto py-1">
+                <button onclick="startGame(1)" class="game-card kid-btn float-card bg-gradient-to-b from-pink-100 to-white border-4 border-pink-400 rounded-3xl p-3 flex flex-col items-center justify-between text-center">
+                    <div class="flex-1 flex items-center justify-center text-5xl">🦋</div>
+                    <div class="w-full bg-pink-500 text-white py-1.5 px-2 rounded-xl font-black text-sm">١. المسار السحري</div>
+                </button>
+                <button onclick="startGame(2)" style="animation-delay:-1s" class="game-card kid-btn float-card bg-gradient-to-b from-purple-100 to-white border-4 border-purple-400 rounded-3xl p-3 flex flex-col items-center justify-between text-center">
+                    <div class="flex-1 flex items-center justify-center text-5xl">🧩</div>
+                    <div class="w-full bg-purple-500 text-white py-1.5 px-2 rounded-xl font-black text-sm">٢. الظلال الذكية</div>
+                </button>
+                <button onclick="startGame(3)" style="animation-delay:-2s" class="game-card kid-btn float-card bg-gradient-to-b from-sky-100 to-white border-4 border-sky-400 rounded-3xl p-3 flex flex-col items-center justify-between text-center">
+                    <div class="flex-1 flex items-center justify-center text-5xl">🚂</div>
+                    <div class="w-full bg-sky-500 text-white py-1.5 px-2 rounded-xl font-black text-sm">٣. قطار الذكاء</div>
+                </button>
+                <button onclick="startGame(4)" style="animation-delay:-3s" class="game-card kid-btn float-card bg-gradient-to-b from-emerald-100 to-white border-4 border-emerald-400 rounded-3xl p-3 flex flex-col items-center justify-between text-center">
+                    <div class="flex-1 flex items-center justify-center text-5xl">🃏</div>
+                    <div class="w-full bg-emerald-500 text-white py-1.5 px-2 rounded-xl font-black text-sm">٤. بطاقات الذاكرة</div>
+                </button>
+                <button onclick="startGame(5)" style="animation-delay:-0.5s" class="game-card kid-btn float-card bg-gradient-to-b from-amber-100 to-white border-4 border-amber-400 rounded-3xl p-3 flex flex-col items-center justify-between text-center">
+                    <div class="flex-1 flex items-center justify-center text-5xl">🔢</div>
+                    <div class="w-full bg-amber-500 text-white py-1.5 px-2 rounded-xl font-black text-sm">٥. العد الذكي</div>
+                </button>
+                <button onclick="startGame(6)" style="animation-delay:-1.5s" class="game-card kid-btn float-card bg-gradient-to-b from-rose-100 to-white border-4 border-rose-400 rounded-3xl p-3 flex flex-col items-center justify-between text-center">
+                    <div class="flex-1 flex items-center justify-center text-5xl">🎨</div>
+                    <div class="w-full bg-rose-500 text-white py-1.5 px-2 rounded-xl font-black text-sm">٦. دنيا الألوان</div>
+                </button>
+                <button onclick="startGame(7)" style="animation-delay:-2.5s" class="game-card kid-btn float-card bg-gradient-to-b from-cyan-100 to-white border-4 border-cyan-400 rounded-3xl p-3 flex flex-col items-center justify-between text-center">
+                    <div class="flex-1 flex items-center justify-center text-5xl">🐾</div>
+                    <div class="w-full bg-cyan-500 text-white py-1.5 px-2 rounded-xl font-black text-sm">٧. عالم الحيوانات</div>
+                </button>
+            </div>
+        </section>
+
+        <section id="game1Screen" class="hidden w-full h-full flex flex-col gap-2">
+            <div class="flex items-center justify-between w-full bg-white/90 px-4 py-2 rounded-2xl border-2 border-pink-300 shadow-sm">
+                <h3 class="text-sm sm:text-lg font-black text-pink-600">وصلي الفراشة للوردة!</h3>
+                <div class="flex gap-2">
+                    <button onclick="speak('g1_title')" class="bg-pink-100 text-pink-700 px-3 py-1.5 rounded-xl font-bold text-sm border border-pink-300 active:scale-95">🔊</button>
+                    <button onclick="nextTracingLevel()" class="bg-purple-100 text-purple-700 px-3 py-1.5 rounded-xl font-bold text-sm border border-purple-300 active:scale-95">🔄</button>
+                </div>
+            </div>
+            <div id="traceContainer" class="relative w-full flex-1 bg-white/90 rounded-3xl border-4 border-pink-400 shadow-lg overflow-hidden touch-none">
+                <canvas id="traceCanvas" class="w-full h-full block cursor-pointer touch-none"></canvas>
+            </div>
+        </section>
+
+        <section id="game2Screen" class="hidden w-full h-full flex flex-col gap-3">
+            <div class="flex items-center justify-between w-full bg-white/90 px-4 py-2 rounded-2xl border-2 border-purple-300 shadow-sm">
+                <h3 class="text-sm sm:text-lg font-black text-purple-700">اسحبي كل شكل لمكانه!</h3>
+                <button onclick="speak('g2_title')" class="bg-purple-100 text-purple-700 px-3 py-1.5 rounded-xl font-bold text-sm border border-purple-300 active:scale-95">🔊</button>
+            </div>
+            <div class="w-full flex-1 bg-white/90 rounded-3xl border-4 border-purple-400 shadow-lg p-4 flex flex-col justify-between items-center overflow-hidden touch-none">
+                <div id="shadowTargetsRow" class="grid grid-cols-4 gap-3 sm:gap-6 w-full max-w-3xl my-auto place-items-center"></div>
+                <div class="w-3/4 border-t-4 border-dashed border-purple-200 my-2"></div>
+                <div id="shadowDraggablesRow" class="grid grid-cols-4 gap-3 sm:gap-6 w-full max-w-3xl my-auto place-items-center"></div>
+            </div>
+        </section>
+
+        <section id="game3Screen" class="hidden w-full h-full flex flex-col gap-3">
+            <div class="flex items-center justify-between w-full bg-white/90 px-4 py-2 rounded-2xl border-2 border-sky-300 shadow-sm">
+                <h3 class="text-sm sm:text-lg font-black text-sky-700">كملي القطر!</h3>
+                <button onclick="speak('g3_title')" class="bg-sky-100 text-sky-700 px-3 py-1.5 rounded-xl font-bold text-sm border border-sky-300 active:scale-95">🔊</button>
+            </div>
+            <div class="w-full flex-1 bg-gradient-to-b from-sky-100 to-emerald-50 rounded-3xl border-4 border-sky-400 shadow-lg p-4 flex flex-col justify-around items-center overflow-hidden relative">
+                <div class="absolute bottom-28 inset-x-0 h-3 bg-amber-800 border-t-2 border-dashed border-amber-300"></div>
+                <div id="trainWrapper" class="train-chug flex items-end justify-center gap-1 sm:gap-2 z-10 w-full overflow-x-auto py-4 px-2"></div>
+                <div class="z-10 flex flex-col items-center gap-2 w-full">
+                    <p class="text-xs sm:text-sm font-extrabold text-purple-800 bg-white/80 px-4 py-1 rounded-full shadow-sm">اختاري الشكل الصح 👇</p>
+                    <div id="patternChoices" class="flex items-center justify-center gap-3 sm:gap-6"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="game4Screen" class="hidden w-full h-full flex flex-col gap-3">
+            <div class="flex items-center justify-between w-full bg-white/90 px-4 py-2 rounded-2xl border-2 border-emerald-300 shadow-sm">
+                <h3 class="text-sm sm:text-lg font-black text-emerald-700">فين الصورتين اللي شبه بعض؟</h3>
+                <div class="flex gap-2">
+                    <button onclick="speak('g4_title')" class="bg-emerald-100 text-emerald-700 px-3 py-1.5 rounded-xl font-bold text-sm border border-emerald-300 active:scale-95">🔊</button>
+                    <button onclick="changeMemoryDifficulty()" id="memDiffBtn" class="bg-amber-100 text-amber-800 px-3 py-1.5 rounded-xl font-bold text-xs border border-amber-300">سهل ⭐</button>
+                </div>
+            </div>
+            <div class="w-full flex-1 bg-white/85 rounded-3xl border-4 border-emerald-400 shadow-lg p-3 sm:p-6 flex items-center justify-center">
+                <div id="memoryGrid" class="grid gap-3 sm:gap-5 w-full max-w-2xl h-full max-h-[380px] place-items-center"></div>
+            </div>
+        </section>
+
+        <section id="game5Screen" class="hidden w-full h-full flex flex-col gap-3">
+            <div class="flex items-center justify-between w-full bg-white/90 px-4 py-2 rounded-2xl border-2 border-amber-300 shadow-sm">
+                <h3 id="countTitle" class="text-sm sm:text-lg font-black text-amber-700">كام واحد على الشاشة؟</h3>
+                <div class="flex gap-2">
+                    <button onclick="speakCountPrompt()" class="bg-amber-100 text-amber-700 px-3 py-1.5 rounded-xl font-bold text-sm border border-amber-300 active:scale-95">🔊</button>
+                    <button onclick="countLevel=1; initCountingGame()" class="bg-rose-100 text-rose-700 px-3 py-1.5 rounded-xl font-bold text-sm border border-rose-300 active:scale-95">🔄</button>
+                </div>
+            </div>
+            <div class="w-full flex-1 bg-gradient-to-b from-amber-50 to-yellow-50 rounded-3xl border-4 border-amber-400 shadow-lg p-3 sm:p-6 flex flex-col justify-around items-center">
+                <div id="countObjects" class="flex flex-wrap justify-center items-center gap-3 sm:gap-5 py-4 px-2 max-w-3xl"></div>
+                <div id="countChoices" class="flex items-center justify-center gap-3 sm:gap-6"></div>
+            </div>
+        </section>
+
+        <section id="game6Screen" class="hidden w-full h-full flex flex-col gap-3">
+            <div class="flex items-center justify-between w-full bg-white/90 px-4 py-2 rounded-2xl border-2 border-rose-300 shadow-sm">
+                <h3 id="colorTitle" class="text-sm sm:text-lg font-black text-rose-700">فين اللون ده؟</h3>
+                <button onclick="speakColorPrompt()" class="bg-rose-100 text-rose-700 px-3 py-1.5 rounded-xl font-bold text-sm border border-rose-300 active:scale-95">🔊</button>
+            </div>
+            <div class="w-full flex-1 bg-white/90 rounded-3xl border-4 border-rose-400 shadow-lg p-3 sm:p-6 flex flex-col justify-around items-center">
+                <div class="text-center">
+                    <p class="text-2xl sm:text-3xl font-black text-purple-800 mb-3">المسي اللون الصح 👇</p>
+                    <div id="colorPreview" class="mx-auto w-24 h-24 rounded-full border-8 border-white shadow-xl mb-2"></div>
+                </div>
+                <div id="colorChoices" class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 place-items-center"></div>
+            </div>
+        </section>
+
+        <section id="game7Screen" class="hidden w-full h-full flex flex-col gap-3">
+            <div class="flex items-center justify-between w-full bg-white/90 px-4 py-2 rounded-2xl border-2 border-cyan-300 shadow-sm">
+                <h3 id="animalTitle" class="text-sm sm:text-lg font-black text-cyan-700">مين ده؟</h3>
+                <button onclick="speakAnimalPrompt()" class="bg-cyan-100 text-cyan-700 px-3 py-1.5 rounded-xl font-bold text-sm border border-cyan-300 active:scale-95">🔊</button>
+            </div>
+            <div class="w-full flex-1 bg-gradient-to-b from-cyan-50 to-sky-50 rounded-3xl border-4 border-cyan-400 shadow-lg p-3 sm:p-6 flex flex-col justify-around items-center">
+                <div class="text-center">
+                    <p class="text-xl sm:text-2xl font-black text-purple-800 mb-2">مين الحيوان ده؟ 👇</p>
+                    <div id="animalSoundHint" class="text-5xl sm:text-6xl mb-2 number-bounce">🎵</div>
+                </div>
+                <div id="animalChoices" class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 place-items-center"></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="winModal" class="hidden fixed inset-0 z-40 bg-purple-950/50 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white border-8 border-amber-300 rounded-[2.5rem] p-6 sm:p-8 max-w-md w-full text-center shadow-2xl flex flex-col items-center gap-4 animate-bounce">
+            <div class="text-6xl sm:text-7xl">👑🌟💖</div>
+            <h2 class="text-2xl sm:text-3xl font-black text-pink-600">برافو يا هيلين!</h2>
+            <p id="winSubtitle" class="text-base sm:text-lg font-bold text-purple-700">أنتِ شعلة ذكاء!</p>
+            <button onclick="continueAfterWin()" class="kid-btn w-full py-4 bg-gradient-to-r from-pink-500 via-purple-500 to-sky-500 text-white text-xl font-black rounded-2xl border-4 border-white shadow-xl">المرحلة اللي بعدها 🚀</button>
+        </div>
+    </div>
+
+    <!-- ==================== RECORDING WIZARD (SEQUENTIAL) ==================== -->
+    <div id="recordWizard" class="hidden fixed inset-0 z-[70] bg-gradient-to-br from-purple-900/90 via-pink-900/90 to-rose-900/90 backdrop-blur-md flex items-center justify-center p-2 sm:p-4">
+        <div class="bg-white rounded-3xl w-full max-w-2xl max-h-[96vh] flex flex-col overflow-hidden shadow-2xl">
+
+            <!-- STEP 1: INTRO -->
+            <div id="wizIntro" class="flex flex-col items-center justify-center p-6 sm:p-8 gap-4 overflow-y-auto">
+                <div class="text-6xl sm:text-7xl">🎙️</div>
+                <h2 class="text-xl sm:text-2xl font-black text-purple-800 text-center">سجّلي صوتك لهيلين جملة جملة</h2>
+                <p class="text-center text-slate-600 text-xs sm:text-sm max-w-lg leading-relaxed">
+                    الطريقة سهلة جداً: هتظهر لك جملة واحدة في الشاشة، اضغطي <b>"🎙️ ابدئي التسجيل"</b>، اقري الجملة بصوتك، اضغطي <b>"⏹️ إيقاف"</b>، اسمعيها، واضغطي <b>"✓ احفظي والتالية"</b>. وهكذا لحد ما تخلصي كل الجمل.
+                </p>
+
+                <div class="w-full bg-purple-50 border-2 border-purple-200 rounded-2xl p-3 space-y-2">
+                    <label class="text-xs font-bold text-purple-700 block">🎤 الصوت الافتراضي للجمل غير المسجلة:</label>
+                    <select id="voiceSelect" class="w-full p-2 rounded-xl border border-purple-300 bg-white text-xs font-bold"></select>
+                    <div class="flex items-center gap-2 text-xs">
+                        <label class="shrink-0 font-bold">النبرة:</label>
+                        <input id="pitchSlider" type="range" min="0.8" max="1.5" step="0.05" value="1.1" oninput="voicePitch=parseFloat(this.value); document.getElementById('pitchVal').textContent=this.value" class="flex-1 accent-purple-500">
+                        <span id="pitchVal" class="text-purple-700 font-bold">1.1</span>
+                    </div>
+                </div>
+
+                <div id="micError" class="hidden text-red-600 bg-red-50 border-2 border-red-300 p-3 rounded-xl text-xs font-bold text-center leading-relaxed"></div>
+
+                <button onclick="initMicAndStart(event)" id="startMicBtn" class="kid-btn bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 sm:px-8 py-4 rounded-2xl font-black text-base sm:text-lg w-full sm:w-auto">
+                    🎤 ابدأي التسجيل
+                </button>
+
+                <div class="flex gap-3 text-xs">
+                    <button onclick="exportRecordings()" class="text-emerald-600 underline font-bold">💾 حفظ نسخة احتياطية</button>
+                    <button onclick="importRecordings()" class="text-sky-600 underline font-bold">📥 استرجاع نسخة</button>
+                    <button onclick="clearAllRecordings()" class="text-rose-500 underline font-bold">🗑️ حذف الكل</button>
+                </div>
+
+                <button onclick="closeWizard()" class="text-slate-500 underline text-sm">إغلاق</button>
+            </div>
+
+            <!-- STEP 2: MAIN WIZARD -->
+            <div id="wizMain" class="hidden flex-1 flex flex-col overflow-hidden">
+
+                <div class="p-3 sm:p-4 border-b-2 border-purple-200 bg-gradient-to-r from-purple-50 to-pink-50">
+                    <div class="flex items-center justify-between mb-1.5">
+                        <span class="text-xs sm:text-sm font-bold text-purple-800">
+                            📝 الجملة <span id="wizNum" class="text-base sm:text-lg">1</span> / <span id="wizTotal">27</span>
+                        </span>
+                        <span id="wizDone" class="text-xs sm:text-sm font-bold text-emerald-600">0 مسجل</span>
+                    </div>
+                    <div class="h-2.5 bg-white rounded-full overflow-hidden border border-purple-200">
+                        <div id="wizProgress" class="h-full bg-gradient-to-r from-emerald-400 to-green-500 rounded-full transition-all duration-300" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 p-4 sm:p-6 flex flex-col justify-center overflow-y-auto">
+                    <div id="wizGroup" class="text-sm font-bold text-pink-600 mb-2 text-center"></div>
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 border-4 border-dashed border-purple-300 rounded-2xl p-5 sm:p-6 min-h-[120px] flex items-center justify-center">
+                        <p id="wizPhrase" class="text-lg sm:text-2xl font-black text-slate-800 text-center leading-relaxed"></p>
+                    </div>
+                    <div id="wizStatus" class="text-center mt-3 text-xs sm:text-sm font-bold text-slate-500"></div>
+                </div>
+
+                <div class="p-3 sm:p-4 bg-gradient-to-t from-slate-50 to-white border-t-2 border-slate-200 space-y-2">
+                    <div id="wizTimer" class="text-center text-2xl font-black text-red-500 hidden">⏺️ 0.0 ث</div>
+
+                    <div class="flex gap-2">
+                        <button id="wizRecordBtn" onclick="toggleWizardRecording()" class="flex-1 kid-btn bg-gradient-to-r from-red-500 to-pink-500 text-white py-3.5 sm:py-4 rounded-2xl font-black text-sm sm:text-base">
+                            🎙️ ابدئي التسجيل
+                        </button>
+                        <button id="wizPlayBtn" onclick="playWizardRecording()" class="kid-btn bg-gradient-to-r from-sky-500 to-blue-500 text-white py-3.5 sm:py-4 px-4 sm:px-5 rounded-2xl font-black text-lg" disabled>▶️</button>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button onclick="wizPrev()" class="flex-1 bg-slate-200 text-slate-700 py-2.5 rounded-xl font-bold text-xs sm:text-sm">← السابقة</button>
+                        <button onclick="wizSkip()" class="flex-1 bg-amber-100 text-amber-700 py-2.5 rounded-xl font-bold text-xs sm:text-sm">تخطي</button>
+                        <button id="wizSaveBtn" onclick="wizSaveAndNext()" class="flex-1 bg-gradient-to-r from-emerald-500 to-green-500 text-white py-2.5 rounded-xl font-black text-xs sm:text-sm hidden">✓ احفظي والتالية</button>
+                    </div>
+
+                    <button onclick="closeWizard()" class="w-full text-slate-400 text-[11px] py-1 hover:text-slate-600">✕ إغلاق</button>
+                </div>
+            </div>
+
+            <!-- STEP 3: DONE -->
+            <div id="wizDone" class="hidden flex flex-col items-center justify-center p-8 gap-4">
+                <div class="text-7xl">🎉</div>
+                <h2 class="text-2xl font-black text-emerald-600">خلصتي التسجيل!</h2>
+                <p id="wizDoneMsg" class="text-center text-slate-600 text-sm max-w-md"></p>
+                <button onclick="closeWizard()" class="kid-btn bg-gradient-to-r from-pink-500 to-purple-500 text-white px-8 py-4 rounded-2xl font-black text-lg">🎮 يلا نلعب!</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /**************************************************************
+         * 1. PHRASES DATABASE
+         **************************************************************/
+        const PHRASES = {
+            welcome: 'أهلاً يا هيلين يا قمر! يلا نلعب ونشغل عقلنا الذكي سوا',
+            welcome_back: 'نورتي يا هيلين! وحشتيني',
+            home: 'اختاري اللعبة اللي تحبيها يا هيلين يا قمر',
+            win: 'برافو يا هيلين يا أشطر بنوتة في الدنيا!',
+            retry: 'قربتي خالص يا هيلين، جربي تاني يا قمر!',
+
+            g1_title: 'يا هيلين يا جميلة، مشّي صباعك الحلو على النقط ووصلي الشكل!',
+            g1_win: 'برافو يا هيلين! وصلتيها!',
+            g2_title: 'اسحبي كل صورة بصباعك وحطيها على الظل بتاعها!',
+            g2_win: 'شطورة! كل الأشكال في مكانها!',
+            g3_title: 'شغلي عقلك الذكي يا هيلين، كملي القطر واختاري الشكل اللي عليه الدور!',
+            g3_win: 'برافو! القطر كمل!',
+            g4_title: 'ركزي يا لولو يا قمر، افتحي الكروت وطابقي الصور!',
+            g4_win: 'شطورة! لقيتي كل الأزواج!',
+            g5_title: 'عُدي الحاجات اللي على الشاشة يا هيلين',
+            g5_win: 'عبقرية! عددتي صح!',
+            g6_title: 'فين اللون ده يا هيلين؟ المسيه بصباعك!',
+            g6_win: 'برافو! اللون ده صح!',
+            g7_title: 'مين الحيوان اللي بيقول كذا؟',
+            g7_win: 'برافو! عرفتي الحيوان!',
+
+            praise_1: 'إنتي عبقرية يا هيلين!',
+            praise_2: 'شاطرة يا روح قلبي!',
+            praise_3: 'إيه الذكاء ده يا هيلين!',
+            praise_4: 'ماشاء الله عليكي يا لولو!',
+            praise_5: 'الله عليكي يا حبيبتي!',
+
+            encourage_1: 'مش مشكلة يا هيلين، جربي تاني!',
+            encourage_2: 'إنتي قدها يا قمر، كملي!',
+            encourage_3: 'خدي وقتك يا لولو، أنا معاكي!'
+        };
+
+        const PHRASE_GROUPS = [
+            { name: '🌟 الأساسيات', keys: ['welcome', 'welcome_back', 'home', 'win', 'retry'] },
+            { name: '🦋 المسار السحري', keys: ['g1_title', 'g1_win'] },
+            { name: '🧩 الظلال الذكية', keys: ['g2_title', 'g2_win'] },
+            { name: '🚂 قطار الذكاء', keys: ['g3_title', 'g3_win'] },
+            { name: '🃏 بطاقات الذاكرة', keys: ['g4_title', 'g4_win'] },
+            { name: '🔢 العد الذكي', keys: ['g5_title', 'g5_win'] },
+            { name: '🎨 دنيا الألوان', keys: ['g6_title', 'g6_win'] },
+            { name: '🐾 عالم الحيوانات', keys: ['g7_title', 'g7_win'] },
+            { name: '💖 التشجيع', keys: ['praise_1', 'praise_2', 'praise_3', 'praise_4', 'praise_5'] },
+            { name: '🌱 التحفيز', keys: ['encourage_1', 'encourage_2', 'encourage_3'] }
+        ];
+
+        /**************************************************************
+         * 2. INDEXEDDB (BETTER THAN localStorage FOR AUDIO)
+         **************************************************************/
+        const DB_NAME = 'HelenVoiceDB';
+        const DB_VERSION = 1;
+        const STORE_NAME = 'recordings';
+
+        function openDB() {
+            return new Promise((resolve, reject) => {
+                const req = indexedDB.open(DB_NAME, DB_VERSION);
+                req.onupgradeneeded = e => {
+                    const db = e.target.result;
+                    if (!db.objectStoreNames.contains(STORE_NAME)) {
+                        db.createObjectStore(STORE_NAME);
+                    }
+                };
+                req.onsuccess = e => resolve(e.target.result);
+                req.onerror = e => reject(e.target.error);
+            });
+        }
+
+        async function dbSave(key, blob) {
+            const db = await openDB();
+            return new Promise((resolve, reject) => {
+                const tx = db.transaction(STORE_NAME, 'readwrite');
+                const req = tx.objectStore(STORE_NAME).put(blob, key);
+                req.onsuccess = () => resolve();
+                req.onerror = () => reject(req.error);
+            });
+        }
+
+        async function dbGetAll() {
+            const db = await openDB();
+            return new Promise((resolve, reject) => {
+                const tx = db.transaction(STORE_NAME, 'readonly');
+                const store = tx.objectStore(STORE_NAME);
+                const keysReq = store.getAllKeys();
+                keysReq.onsuccess = () => {
+                    const keys = keysReq.result;
+                    if (!keys.length) return resolve({});
+                    const valsReq = store.getAll();
+                    valsReq.onsuccess = () => {
+                        const result = {};
+                        keys.forEach((k, i) => result[k] = valsReq.result[i]);
+                        resolve(result);
+                    };
+                    valsReq.onerror = () => reject(valsReq.error);
+                };
+                keysReq.onerror = () => reject(keysReq.error);
+            });
+        }
+
+        async function dbClearAll() {
+            const db = await openDB();
+            return new Promise((resolve, reject) => {
+                const tx = db.transaction(STORE_NAME, 'readwrite');
+                tx.objectStore(STORE_NAME).clear();
+                tx.oncomplete = () => resolve();
+                tx.onerror = () => reject(tx.error);
+            });
+        }
+
+        /**************************************************************
+         * 3. VOICE / AUDIO STATE
+         **************************************************************/
+        let starsCount = parseInt(localStorage.getItem('helen_stars') || '12', 10);
+        let isMuted = false;
+        let currentGame = 0;
+        let selectedVoice = null;
+        let voicePitch = 1.1;
+        let voiceRate = 0.95;
+        let audioCache = {};
+
+        function updateStarUI() {
+            document.getElementById('starCountDisplay').textContent = starsCount;
+            localStorage.setItem('helen_stars', starsCount);
+        }
+        function addStars(n = 1) { starsCount += n; updateStarUI(); }
+
+        // === Web Audio ===
+        let audioCtx = null;
+        function getAC() {
+            if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            return audioCtx;
+        }
+        function playHarpNote(freq = 523.25, dur = 0.45, vol = 0.16) {
+            if (isMuted) return;
+            try {
+                const ctx = getAC();
+                const o1 = ctx.createOscillator(), o2 = ctx.createOscillator(), g = ctx.createGain();
+                o1.type = 'sine'; o2.type = 'triangle';
+                o1.frequency.value = freq; o2.frequency.value = freq * 2;
+                g.gain.setValueAtTime(0.001, ctx.currentTime);
+                g.gain.linearRampToValueAtTime(vol, ctx.currentTime + 0.02);
+                g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + dur);
+                o1.connect(g); o2.connect(g); g.connect(ctx.destination);
+                o1.start(); o2.start();
+                o1.stop(ctx.currentTime + dur); o2.stop(ctx.currentTime + dur);
+            } catch(e) {}
+        }
+        let scaleIdx = 0;
+        const HARP = [523.25, 587.33, 659.25, 698.46, 783.99, 880.00, 987.77, 1046.50];
+        function playStepChime() { playHarpNote(HARP[scaleIdx++ % HARP.length], 0.35, 0.12); }
+        function playWinFanfare() {
+            if (isMuted) return;
+            [523.25, 659.25, 783.99, 1046.50, 1318.51].forEach((n, i) =>
+                setTimeout(() => playHarpNote(n, 0.6, 0.2), i * 110));
+        }
+        function playGentleRetry() {
+            if (isMuted) return;
+            playHarpNote(392, 0.3, 0.12);
+            setTimeout(() => playHarpNote(349.23, 0.4, 0.12), 140);
+        }
+
+        // === TTS ===
+        function pickBestVoice() {
+            if (!('speechSynthesis' in window)) return null;
+            const voices = speechSynthesis.getVoices();
+            if (!voices.length) return null;
+            const ar = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith('ar'));
+            const prio = [
+                v => v.lang.toLowerCase() === 'ar-eg' && /female|hoda|salma|sara|nour|layla/i.test(v.name),
+                v => v.lang.toLowerCase() === 'ar-eg',
+                v => v.lang.toLowerCase().startsWith('ar') && /female|hoda|salma|sara/i.test(v.name),
+                v => v.lang.toLowerCase().startsWith('ar'),
+                () => true
+            ];
+            for (const p of prio) {
+                const found = ar.find(p) || voices.find(p);
+                if (found) return found;
+            }
+            return voices[0];
+        }
+        function refreshVoiceList() {
+            if (!('speechSynthesis' in window)) return;
+            const sel = document.getElementById('voiceSelect');
+            if (!sel) return;
+            const voices = speechSynthesis.getVoices();
+            sel.innerHTML = '';
+            const ar = voices.filter(v => v.lang && v.lang.toLowerCase().startsWith('ar'));
+            const list = ar.length ? ar : voices;
+            selectedVoice = pickBestVoice();
+            list.forEach(v => {
+                const o = document.createElement('option');
+                o.value = v.name; o.textContent = `${v.name} (${v.lang})`;
+                if (selectedVoice && v.name === selectedVoice.name) o.selected = true;
+                sel.appendChild(o);
+            });
+        }
+        if ('speechSynthesis' in window) {
+            speechSynthesis.onvoiceschanged = refreshVoiceList;
+            setTimeout(refreshVoiceList, 100);
+            setTimeout(refreshVoiceList, 500);
+        }
+        document.addEventListener('change', e => {
+            if (e.target && e.target.id === 'voiceSelect') {
+                const voices = speechSynthesis.getVoices();
+                selectedVoice = voices.find(v => v.name === e.target.value) || selectedVoice;
+            }
+        });
+
+        function speakText(text) {
+            if (!('speechSynthesis' in window)) return;
+            try {
+                speechSynthesis.cancel();
+                const u = new SpeechSynthesisUtterance(text);
+                if (selectedVoice) u.voice = selectedVoice;
+                u.lang = selectedVoice ? selectedVoice.lang : 'ar-EG';
+                u.pitch = voicePitch;
+                u.rate = voiceRate;
+                speechSynthesis.speak(u);
+            } catch(e) {}
+        }
+
+        // === UNIFIED SPEAK (custom recording → fallback TTS) ===
+        function speak(key) {
+            const text = PHRASES[key] || key;
+            const sub = document.getElementById('subtitleSpeech');
+            if (sub) sub.textContent = text;
+            if (isMuted) return;
+            if ('speechSynthesis' in window) speechSynthesis.cancel();
+
+            // Try custom recording
+            if (audioCache[key]) {
+                try {
+                    const audio = new Audio(audioCache[key]);
+                    audio.play().catch(() => speakText(text));
+                    return;
+                } catch(e) {}
+            }
+            speakText(text);
+        }
+
+        async function loadAudioCache() {
+            try {
+                const all = await dbGetAll();
+                for (const [key, blob] of Object.entries(all)) {
+                    if (blob && !audioCache[key]) {
+                        audioCache[key] = URL.createObjectURL(blob);
+                    }
+                }
+            } catch(e) { console.warn('loadAudioCache', e); }
+        }
+
+        function triggerGreeting() {
+            speak('welcome');
+            spawnSparkleBurst(window.innerWidth - 80, 60, 22);
+        }
+        function toggleAudioMute() {
+            isMuted = !isMuted;
+            document.getElementById('muteIcon').textContent = isMuted ? '🔇' : '🔔';
+            if (isMuted && 'speechSynthesis' in window) speechSynthesis.cancel();
+            else speakText('الصوت شغال يا هيلين!');
+        }
+
+        function handleRetry() {
+            const keys = ['encourage_1', 'encourage_2', 'encourage_3', 'retry'];
+            speak(keys[Math.floor(Math.random() * keys.length)]);
+        }
+
+        /**************************************************************
+         * 4. RECORDING WIZARD (SEQUENTIAL)
+         **************************************************************/
+        let wizardStream = null;
+        let wizardRecorder = null;
+        let wizardChunks = [];
+        let wizardTimerInterval = null;
+        let wizardRecordStart = 0;
+        let wizardPendingBlob = null;
+        let wizardPhrases = [];
+        let wizardIndex = 0;
+        let wizardRecordings = {};
+
+        function buildWizardPhrases() {
+            wizardPhrases = [];
+            PHRASE_GROUPS.forEach(g => {
+                g.keys.forEach(k => {
+                    if (PHRASES[k]) wizardPhrases.push({ key: k, text: PHRASES[k], group: g.name });
+                });
+            });
+        }
+
+        function openWizard() {
+            document.getElementById('recordWizard').classList.remove('hidden');
+            buildWizardPhrases();
+            document.getElementById('wizIntro').classList.remove('hidden');
+            document.getElementById('wizMain').classList.add('hidden');
+            document.getElementById('wizDone').classList.add('hidden');
+            document.getElementById('micError').classList.add('hidden');
+            document.getElementById('startMicBtn').disabled = false;
+            document.getElementById('startMicBtn').textContent = '🎤 ابدأي التسجيل';
+            refreshVoiceList();
+        }
+
+        function closeWizard() {
+            if (wizardRecorder && wizardRecorder.state === 'recording') {
+                try { wizardRecorder.stop(); } catch(e) {}
+            }
+            if (wizardStream) {
+                wizardStream.getTracks().forEach(t => t.stop());
+                wizardStream = null;
+            }
+            clearInterval(wizardTimerInterval);
+            document.getElementById('recordWizard').classList.add('hidden');
+            document.getElementById('wizTimer').classList.add('hidden');
+        }
+
+        function pickMimeType() {
+            const types = ['audio/webm;codecs=opus', 'audio/webm', 'audio/ogg;codecs=opus', 'audio/mp4', 'audio/mpeg'];
+            for (const t of types) {
+                if (window.MediaRecorder && MediaRecorder.isTypeSupported(t)) return t;
+            }
+            return '';
+        }
+
+        async function initMicAndStart(ev) {
+            const errEl = document.getElementById('micError');
+            errEl.classList.add('hidden');
+            const btn = document.getElementById('startMicBtn');
+            btn.disabled = true;
+            btn.textContent = '⏳ جاري طلب إذن المايك...';
+
+            // Secure context check
+            if (location.protocol === 'file:' || !window.isSecureContext) {
+                // Try anyway - some browsers allow file://
+                console.warn('Not secure context, trying anyway...');
+            }
+
+            if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+                errEl.innerHTML = '⚠️ <b>المتصفح لا يدعم التسجيل.</b><br>جربي Chrome أو Safari حديث. إذا كنتي تفتحي الملف مباشرة (file://)، افتحي عبر <b>localhost</b> أو رابط <b>HTTPS</b>.';
+                errEl.classList.remove('hidden');
+                btn.disabled = false;
+                btn.textContent = '🎤 ابدأي التسجيل';
+                return;
+            }
+
+            if (!window.MediaRecorder) {
+                errEl.innerHTML = '⚠️ المتصفح لا يدعم MediaRecorder.<br>جربي Chrome حديث.';
+                errEl.classList.remove('hidden');
+                btn.disabled = false;
+                btn.textContent = '🎤 ابدأي التسجيل';
+                return;
+            }
+
+            try {
+                // IMPORTANT: request simple audio for widest compatibility
+                wizardStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+
+                // Success - show wizard
+                document.getElementById('wizIntro').classList.add('hidden');
+                document.getElementById('wizMain').classList.remove('hidden');
+
+                await loadWizardRecordings();
+                wizardIndex = 0;
+                renderWizard();
+
+                // Preload audio cache for wizard playback
+            } catch(err) {
+                btn.disabled = false;
+                btn.textContent = '🎤 ابدأي التسجيل';
+
+                let msg = '⚠️ ';
+                if (err.name === 'NotAllowedError' || err.name === 'PermissionDeniedError') {
+                    msg += '<b>تم رفض إذن المايكروفون.</b><br>اضغطي على أيقونة 🔒 أو 🎙️ في شريط عنوان المتصفح، اختر "السماح" للمايك، ثم اضغطي الزر مرة أخرى.';
+                } else if (err.name === 'NotFoundError' || err.name === 'DevicesNotFoundError') {
+                    msg += '<b>لم يتم العثور على مايكروفون.</b><br>تأكدي من توصيل مايك أو استخدام مايك الجهاز.';
+                } else if (err.name === 'NotReadableError' || err.name === 'TrackStartError') {
+                    msg += '<b>المايك مشغول بتطبيق آخر.</b><br>اقفلي التطبيقات الأخرى (Zoom, Teams, ...) وجربي مرة أخرى.';
+                } else if (err.name === 'SecurityError') {
+                    msg += '<b>مشكلة في الأمان (Security).</b><br>افتحي الملف عبر <b>HTTPS</b> أو <b>localhost</b> بدلاً من file://';
+                } else if (err.name === 'OverconstrainedError') {
+                    msg += '<b>المايك لا يدعم الإعدادات المطلوبة.</b><br>جربي مايك آخر.';
+                } else {
+                    msg += '<b>خطأ:</b> ' + (err.message || err.name || 'غير معروف');
+                }
+                errEl.innerHTML = msg;
+                errEl.classList.remove('hidden');
+                console.error('Mic error:', err);
+            }
+        }
+
+        async function loadWizardRecordings() {
+            try {
+                wizardRecordings = await dbGetAll();
+            } catch(e) {
+                wizardRecordings = {};
+            }
+        }
+
+        function renderWizard() {
+            const p = wizardPhrases[wizardIndex];
+            if (!p) return;
+
+            document.getElementById('wizNum').textContent = wizardIndex + 1;
+            document.getElementById('wizTotal').textContent = wizardPhrases.length;
+            document.getElementById('wizGroup').textContent = p.group;
+            document.getElementById('wizPhrase').textContent = p.text;
+
+            // Apply slide animation
+            const phraseEl = document.getElementById('wizPhrase');
+            phraseEl.classList.remove('wiz-slide');
+            void phraseEl.offsetWidth;
+            phraseEl.classList.add('wiz-slide');
+
+            const recorded = Object.keys(wizardRecordings).filter(k => PHRASES[k]).length;
+            const pct = (recorded / wizardPhrases.length) * 100;
+            document.getElementById('wizProgress').style.width = pct + '%';
+            document.getElementById('wizDone').textContent = `${recorded} / ${wizardPhrases.length} مسجل`;
+
+            const isRecorded = !!wizardRecordings[p.key];
+            const statusEl = document.getElementById('wizStatus');
+            const playBtn = document.getElementById('wizPlayBtn');
+            const recBtn = document.getElementById('wizRecordBtn');
+            const saveBtn = document.getElementById('wizSaveBtn');
+
+            if (isRecorded) {
+                statusEl.textContent = '✓ مسجلة بصوتك - اسمعيها بالزر الأزرق';
+                statusEl.className = 'text-center mt-3 text-xs sm:text-sm font-bold text-emerald-600';
+                playBtn.disabled = false;
+                recBtn.textContent = '🔄 إعادة التسجيل';
+            } else {
+                statusEl.textContent = 'لم تُسجّل بعد - هتستخدم الصوت الافتراضي';
+                statusEl.className = 'text-center mt-3 text-xs sm:text-sm font-bold text-amber-600';
+                playBtn.disabled = true;
+                recBtn.textContent = '🎙️ ابدئي التسجيل';
+            }
+            recBtn.className = 'flex-1 kid-btn bg-gradient-to-r from-red-500 to-pink-500 text-white py-3.5 sm:py-4 rounded-2xl font-black text-sm sm:text-base';
+            saveBtn.classList.add('hidden');
+            document.getElementById('wizTimer').classList.add('hidden');
+            wizardPendingBlob = null;
+        }
+
+        function toggleWizardRecording() {
+            if (wizardRecorder && wizardRecorder.state === 'recording') {
+                stopWizardRecording();
+            } else {
+                startWizardRecording();
+            }
+        }
+
+        function startWizardRecording() {
+            if (!wizardStream) {
+                alert('المايك مش جاهز، اعملي refresh وجربي');
+                return;
+            }
+            const p = wizardPhrases[wizardIndex];
+            if (!p) return;
+
+            wizardChunks = [];
+            const mimeType = pickMimeType();
+            try {
+                wizardRecorder = new MediaRecorder(wizardStream, mimeType ? { mimeType } : {});
+            } catch(e) {
+                wizardRecorder = new MediaRecorder(wizardStream);
+            }
+
+            wizardRecorder.ondataavailable = e => {
+                if (e.data && e.data.size > 0) wizardChunks.push(e.data);
+            };
+
+            wizardRecorder.onstop = () => {
+                clearInterval(wizardTimerInterval);
+                document.getElementById('wizTimer').classList.add('hidden');
+
+                const type = (wizardRecorder && wizardRecorder.mimeType) || 'audio/webm';
+                const blob = new Blob(wizardChunks, { type });
+                wizardChunks = [];
+
+                if (blob.size < 800) {
+                    alert('التسجيل قصير جداً أو فاضي. جربي تاني واقري الجملة كاملة.');
+                    document.getElementById('wizRecordBtn').textContent = '🎙️ ابدئي التسجيل';
+                    document.getElementById('wizRecordBtn').className = 'flex-1 kid-btn bg-gradient-to-r from-red-500 to-pink-500 text-white py-3.5 sm:py-4 rounded-2xl font-black text-sm sm:text-base';
+                    return;
+                }
+
+                wizardPendingBlob = blob;
+
+                // Auto-preview
+                try {
+                    const url = URL.createObjectURL(blob);
+                    const audio = new Audio(url);
+                    audio.onended = () => URL.revokeObjectURL(url);
+                    audio.onerror = () => URL.revokeObjectURL(url);
+                    audio.play().catch(() => {});
+                } catch(e) {}
+
+                document.getElementById('wizSaveBtn').classList.remove('hidden');
+                document.getElementById('wizRecordBtn').textContent = '🔄 إعادة التسجيل';
+                document.getElementById('wizRecordBtn').className = 'flex-1 kid-btn bg-gradient-to-r from-amber-500 to-orange-500 text-white py-3.5 sm:py-4 rounded-2xl font-black text-sm sm:text-base';
+                document.getElementById('wizStatus').textContent = '✓ اتسجلت! اسمعيها، وبعدين احفظي';
+                document.getElementById('wizStatus').className = 'text-center mt-3 text-xs sm:text-sm font-bold text-emerald-600';
+                document.getElementById('wizPlayBtn').disabled = false;
+            };
+
+            wizardRecorder.onerror = (e) => {
+                console.error('Recorder error:', e);
+                alert('خطأ في التسجيل: ' + (e.error && e.error.message || 'غير معروف'));
+                clearInterval(wizardTimerInterval);
+                document.getElementById('wizTimer').classList.add('hidden');
+            };
+
+            try {
+                wizardRecorder.start();
+            } catch(e) {
+                alert('مش قادر أبدأ التسجيل: ' + e.message);
+                return;
+            }
+
+            wizardRecordStart = Date.now();
+            document.getElementById('wizRecordBtn').textContent = '⏹️ إيقاف التسجيل';
+            document.getElementById('wizRecordBtn').className = 'flex-1 kid-btn bg-gradient-to-r from-red-600 to-red-700 text-white py-3.5 sm:py-4 rounded-2xl font-black text-sm sm:text-base recording-active';
+            document.getElementById('wizTimer').classList.remove('hidden');
+            document.getElementById('wizSaveBtn').classList.add('hidden');
+            document.getElementById('wizStatus').textContent = '🔴 جاري التسجيل... اقري الجملة';
+
+            wizardTimerInterval = setInterval(() => {
+                const sec = ((Date.now() - wizardRecordStart) / 1000).toFixed(1);
+                document.getElementById('wizTimer').textContent = `⏺️ ${sec} ث`;
+                if (Date.now() - wizardRecordStart > 15000) stopWizardRecording();
+            }, 100);
+        }
+
+        function stopWizardRecording() {
+            if (wizardRecorder && wizardRecorder.state === 'recording') {
+                try { wizardRecorder.stop(); } catch(e) {}
+            }
+        }
+
+        function playWizardRecording() {
+            const p = wizardPhrases[wizardIndex];
+            if (!p) return;
+            const blob = wizardPendingBlob || wizardRecordings[p.key];
+            if (!blob) return;
+            try {
+                const url = URL.createObjectURL(blob);
+                const audio = new Audio(url);
+                audio.onended = () => URL.revokeObjectURL(url);
+                audio.onerror = () => URL.revokeObjectURL(url);
+                audio.play().catch(() => {});
+            } catch(e) {}
+        }
+
+        async function wizSaveAndNext() {
+            if (!wizardPendingBlob) return;
+            const p = wizardPhrases[wizardIndex];
+            const saveBtn = document.getElementById('wizSaveBtn');
+            saveBtn.disabled = true;
+            saveBtn.textContent = '⏳ جاري الحفظ...';
+
+            try {
+                await dbSave(p.key, wizardPendingBlob);
+                wizardRecordings[p.key] = wizardPendingBlob;
+
+                if (audioCache[p.key]) {
+                    URL.revokeObjectURL(audioCache[p.key]);
+                }
+                audioCache[p.key] = URL.createObjectURL(wizardPendingBlob);
+            } catch(e) {
+                alert('خطأ في الحفظ: ' + e.message);
+                saveBtn.disabled = false;
+                saveBtn.textContent = '✓ احفظي والتالية';
+                return;
+            }
+
+            saveBtn.disabled = false;
+            saveBtn.textContent = '✓ احفظي والتالية';
+            wizardPendingBlob = null;
+
+            if (wizardIndex < wizardPhrases.length - 1) {
+                wizardIndex++;
+                renderWizard();
+            } else {
+                showWizardDone();
+            }
+        }
+
+        function wizSkip() {
+            wizardPendingBlob = null;
+            if (wizardIndex < wizardPhrases.length - 1) {
+                wizardIndex++;
+                renderWizard();
+            } else {
+                showWizardDone();
+            }
+        }
+
+        function wizPrev() {
+            if (wizardIndex > 0) {
+                wizardIndex--;
+                renderWizard();
+            }
+        }
+
+        function showWizardDone() {
+            document.getElementById('wizMain').classList.add('hidden');
+            document.getElementById('wizDone').classList.remove('hidden');
+            const count = Object.keys(wizardRecordings).filter(k => PHRASES[k]).length;
+            document.getElementById('wizDoneMsg').textContent =
+                `سجلتي ${count} جملة من ${wizardPhrases.length}. هيلين هتسمع صوتك فيهم، والباقي بالصوت الافتراضي. تقدري ترجعي في أي وقت لتسجيل الباقي.`;
+        }
+
+        async function clearAllRecordings() {
+            if (!confirm('⚠️ هل تريدين حذف كل التسجيلات؟ هذا لا يمكن التراجع عنه.')) return;
+            try {
+                await dbClearAll();
+                for (const k in audioCache) {
+                    try { URL.revokeObjectURL(audioCache[k]); } catch(e) {}
+                }
+                audioCache = {};
+                wizardRecordings = {};
+                alert('✓ تم حذف كل التسجيلات');
+                if (!document.getElementById('wizMain').classList.contains('hidden')) {
+                    wizardIndex = 0;
+                    renderWizard();
+                }
+            } catch(e) {
+                alert('خطأ في الحذف: ' + e.message);
+            }
+        }
+
+        async function exportRecordings() {
+            try {
+                const all = await dbGetAll();
+                const exportData = {};
+                for (const [key, blob] of Object.entries(all)) {
+                    if (!blob) continue;
+                    const base64 = await new Promise((resolve) => {
+                        const reader = new FileReader();
+                        reader.onloadend = () => resolve(reader.result);
+                        reader.readAsDataURL(blob);
+                    });
+                    exportData[key] = base64;
+                }
+                const json = JSON.stringify({
+                    version: 1,
+                    date: new Date().toISOString(),
+                    phrases: PHRASES,
+                    recordings: exportData
+                });
+                const blob = new Blob([json], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `helen-voice-backup-${Date.now()}.json`;
+                a.click();
+                URL.revokeObjectURL(url);
+            } catch(e) {
+                alert('خطأ في التصدير: ' + e.message);
+            }
+        }
+
+        function importRecordings() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.json,application/json';
+            input.onchange = async (e) => {
+                const file = e.target.files[0];
+                if (!file) return;
+                try {
+                    const text = await file.text();
+                    const data = JSON.parse(text);
+                    if (!data.recordings) throw new Error('ملف غير صالح');
+                    let count = 0;
+                    for (const [key, base64] of Object.entries(data.recordings)) {
+                        const blob = await (await fetch(base64)).blob();
+                        await dbSave(key, blob);
+                        if (audioCache[key]) URL.revokeObjectURL(audioCache[key]);
+                        audioCache[key] = URL.createObjectURL(blob);
+                        count++;
+                    }
+                    alert(`✓ تم استرجاع ${count} تسجيل بنجاح!`);
+                    if (!document.getElementById('wizMain').classList.contains('hidden')) {
+                        await loadWizardRecordings();
+                        renderWizard();
+                    }
+                } catch(err) {
+                    alert('خطأ في الاستيراد: ' + err.message);
+                }
+            };
+            input.click();
+        }
+
+        /**************************************************************
+         * 5. FX CANVAS
+         **************************************************************/
+        const fxCanvas = document.getElementById('fxCanvas');
+        const fxCtx = fxCanvas.getContext('2d');
+        let particles = [];
+        function resizeFx() { fxCanvas.width = window.innerWidth; fxCanvas.height = window.innerHeight; }
+        window.addEventListener('resize', resizeFx);
+        resizeFx();
+        function spawnSparkleBurst(x, y, n = 14) {
+            const colors = ['#FF7EB3', '#A855F7', '#38BDF8', '#FBBF24', '#34D399'];
+            for (let i = 0; i < n; i++) {
+                const angle = Math.random() * Math.PI * 2, speed = 1.5 + Math.random() * 5;
+                particles.push({ x, y, vx: Math.cos(angle) * speed, vy: Math.sin(angle) * speed - 1.5,
+                    size: 5 + Math.random() * 7, color: colors[Math.floor(Math.random() * colors.length)],
+                    alpha: 1, life: 0.02 + Math.random() * 0.02 });
+            }
+        }
+        function launchConfetti() {
+            for (let i = 0; i < 65; i++) spawnSparkleBurst(Math.random() * window.innerWidth, Math.random() * (window.innerHeight * 0.5), 2);
+        }
+        function fxLoop() {
+            fxCtx.clearRect(0, 0, fxCanvas.width, fxCanvas.height);
+            for (let i = particles.length - 1; i >= 0; i--) {
+                const p = particles[i];
+                p.x += p.vx; p.y += p.vy; p.vy += 0.12; p.alpha -= p.life;
+                if (p.alpha <= 0) { particles.splice(i, 1); continue; }
+                fxCtx.save();
+                fxCtx.globalAlpha = Math.max(0, p.alpha);
+                fxCtx.fillStyle = p.color;
+                fxCtx.beginPath(); fxCtx.arc(p.x, p.y, p.size, 0, Math.PI * 2); fxCtx.fill();
+                fxCtx.restore();
+            }
+            requestAnimationFrame(fxLoop);
+        }
+        fxLoop();
+
+        /**************************************************************
+         * 6. NAVIGATION
+         **************************************************************/
+        function startGame(n) {
+            currentGame = n;
+            document.getElementById('lobbyScreen').classList.add('hidden');
+            document.getElementById('homeBtn').classList.remove('hidden');
+            [1,2,3,4,5,6,7].forEach(x => document.getElementById(`game${x}Screen`).classList.toggle('hidden', x !== n));
+            playWinFanfare();
+            speak(`g${n}_title`);
+            if (n === 1) initTracingGame();
+            if (n === 2) initShadowGame();
+            if (n === 3) initPatternGame();
+            if (n === 4) initMemoryGame();
+            if (n === 5) { countLevel = 1; initCountingGame(); }
+            if (n === 6) initColorGame();
+            if (n === 7) initAnimalGame();
+        }
+        function goHome() {
+            currentGame = 0;
+            document.getElementById('lobbyScreen').classList.remove('hidden');
+            document.getElementById('homeBtn').classList.add('hidden');
+            [1,2,3,4,5,6,7].forEach(x => document.getElementById(`game${x}Screen`).classList.add('hidden'));
+            speak('home');
+        }
+        function triggerWinCelebration(winKey) {
+            addStars(1);
+            playWinFanfare();
+            launchConfetti();
+            let phrase, phraseKey;
+            if (winKey) { phraseKey = winKey; phrase = PHRASES[winKey]; }
+            else {
+                const praise = ['praise_1', 'praise_2', 'praise_3', 'praise_4', 'praise_5', 'win'];
+                phraseKey = praise[Math.floor(Math.random() * praise.length)];
+                phrase = PHRASES[phraseKey];
+            }
+            document.getElementById('winSubtitle').textContent = phrase;
+            document.getElementById('winModal').classList.remove('hidden');
+            speak(phraseKey);
+        }
+        function continueAfterWin() {
+            document.getElementById('winModal').classList.add('hidden');
+            if (currentGame === 1) nextTracingLevel();
+            if (currentGame === 2) initShadowGame();
+            if (currentGame === 3) initPatternGame();
+            if (currentGame === 4) initMemoryGame();
+            if (currentGame === 5) { countLevel++; initCountingGame(); }
+            if (currentGame === 6) initColorGame();
+            if (currentGame === 7) initAnimalGame();
+        }
+        function celebrateStars() {
+            playWinFanfare();
+            launchConfetti();
+            speakText(`معاكي ${starsCount} نجمة دهبية يا أشطر هيلين!`);
+        }
+
+        /**************************************************************
+         * 7. GAME 1: TRACING
+         **************************************************************/
+        let traceLevel = 0, tracePoints = [], traceIdx = 0, isTracing = false;
+        const TRACE_THEMES = [
+            { start: "🦋", end: "🌸", color: "#EC4899" },
+            { start: "🐱", end: "🥛", color: "#A855F7" },
+            { start: "🐰", end: "🥕", color: "#F97316" },
+            { start: "👑", end: "🏰", color: "#0284C7" }
+        ];
+        function initTracingGame() {
+            const c = document.getElementById('traceContainer');
+            const canvas = document.getElementById('traceCanvas');
+            canvas.width = c.clientWidth; canvas.height = c.clientHeight;
+            buildTracePath(canvas.width, canvas.height);
+            drawTrace();
+            canvas.onpointerdown = (e) => {
+                const r = canvas.getBoundingClientRect();
+                const x = e.clientX - r.left, y = e.clientY - r.top;
+                const cur = tracePoints[traceIdx];
+                if (Math.hypot(x - cur.x, y - cur.y) < 75) { isTracing = true; playStepChime(); }
+                else spawnSparkleBurst(e.clientX, e.clientY, 6);
+            };
+            canvas.onpointermove = (e) => {
+                if (!isTracing) return;
+                const r = canvas.getBoundingClientRect();
+                const x = e.clientX - r.left, y = e.clientY - r.top;
+                let adv = false;
+                while (traceIdx < tracePoints.length - 1) {
+                    const n = tracePoints[traceIdx + 1];
+                    if (Math.hypot(x - n.x, y - n.y) < 65) { traceIdx++; adv = true; } else break;
+                }
+                if (adv) {
+                    if (traceIdx % 3 === 0) { playStepChime(); spawnSparkleBurst(e.clientX, e.clientY, 4); }
+                    drawTrace();
+                    if (traceIdx >= tracePoints.length - 1) {
+                        isTracing = false;
+                        setTimeout(() => triggerWinCelebration('g1_win'), 200);
+                    }
+                }
+            };
+            canvas.onpointerup = () => { isTracing = false; };
+        }
+        function buildTracePath(w, h) {
+            tracePoints = []; traceIdx = 0;
+            const padX = Math.min(90, w * 0.14);
+            const sx = w - padX, ex = padX, my = h / 2;
+            for (let i = 0; i <= 45; i++) {
+                const t = i / 45;
+                const x = sx + (ex - sx) * t;
+                let y = my;
+                const m = traceLevel % 4;
+                if (m === 0) y = my + Math.sin(t * Math.PI * 2) * (h * 0.25);
+                else if (m === 1) y = my + (0.5 - Math.sin(t * Math.PI)) * (h * 0.42);
+                else if (m === 2) y = my + Math.cos(t * Math.PI * 3) * (h * 0.26);
+                else y = my + Math.sin(t * Math.PI * 4) * (h * 0.22);
+                tracePoints.push({ x, y });
+            }
+        }
+        function drawTrace() {
+            const canvas = document.getElementById('traceCanvas');
+            if (!canvas || !tracePoints.length) return;
+            const ctx = canvas.getContext('2d');
+            const th = TRACE_THEMES[traceLevel % 4];
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.save();
+            ctx.beginPath();
+            tracePoints.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
+            ctx.strokeStyle = '#F3E8FF'; ctx.lineWidth = 42; ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.stroke();
+            ctx.beginPath();
+            tracePoints.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
+            ctx.strokeStyle = '#D8B4FE'; ctx.lineWidth = 8; ctx.setLineDash([14, 16]); ctx.stroke();
+            ctx.restore();
+            if (traceIdx > 0) {
+                ctx.save(); ctx.beginPath();
+                for (let i = 0; i <= traceIdx; i++) {
+                    const p = tracePoints[i];
+                    if (i === 0) ctx.moveTo(p.x, p.y); else ctx.lineTo(p.x, p.y);
+                }
+                ctx.strokeStyle = th.color; ctx.lineWidth = 22; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+                ctx.shadowColor = th.color; ctx.shadowBlur = 15; ctx.stroke(); ctx.restore();
+            }
+            const e = tracePoints[tracePoints.length - 1];
+            ctx.save(); ctx.beginPath(); ctx.arc(e.x, e.y, 40, 0, Math.PI * 2);
+            ctx.fillStyle = '#FEF3C7'; ctx.fill();
+            ctx.lineWidth = 4; ctx.strokeStyle = '#FBBF24'; ctx.stroke();
+            ctx.font = '44px serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+            ctx.fillText(th.end, e.x, e.y + 3); ctx.restore();
+            const c = tracePoints[traceIdx];
+            ctx.save(); ctx.beginPath(); ctx.arc(c.x, c.y, 42, 0, Math.PI * 2);
+            ctx.fillStyle = '#FFF'; ctx.shadowColor = 'rgba(0,0,0,0.18)'; ctx.shadowBlur = 12; ctx.fill();
+            ctx.lineWidth = 5; ctx.strokeStyle = th.color; ctx.stroke();
+            ctx.font = '46px serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+            ctx.fillText(th.start, c.x, c.y + 3); ctx.restore();
+        }
+        function nextTracingLevel() { traceLevel++; initTracingGame(); }
+
+        /**************************************************************
+         * 8. GAME 2: SHADOW
+         **************************************************************/
+        const SHAPES = [
+            { id: 'crown', color: '#FBBF24', svg: `<svg viewBox="0 0 100 100" class="w-16 h-16 sm:w-20 sm:h-20"><path d="M12 75 L22 30 L50 52 L78 30 L88 75 Z" fill="currentColor" stroke="#F59E0B" stroke-width="4" stroke-linejoin="round"/></svg>` },
+            { id: 'heart', color: '#FB7185', svg: `<svg viewBox="0 0 100 100" class="w-16 h-16 sm:w-20 sm:h-20"><path d="M50 84 C50 84 14 60 14 34 C14 18 28 12 40 20 C46 24 50 30 50 30 C50 30 54 24 60 20 C72 12 86 18 86 34 C86 60 50 84 50 84 Z" fill="currentColor" stroke="#E11D48" stroke-width="4"/></svg>` },
+            { id: 'star', color: '#FACC15', svg: `<svg viewBox="0 0 100 100" class="w-16 h-16 sm:w-20 sm:h-20"><path d="M50 10 L62 36 L90 40 L70 60 L75 88 L50 74 L25 88 L30 60 L10 40 L38 36 Z" fill="currentColor" stroke="#D97706" stroke-width="4"/></svg>` },
+            { id: 'fish', color: '#38BDF8', svg: `<svg viewBox="0 0 100 100" class="w-16 h-16 sm:w-20 sm:h-20"><path d="M15 50 C30 22, 65 22, 75 50 C65 78, 30 78, 15 50 Z M72 50 L92 30 L92 70 Z" fill="currentColor" stroke="#0284C7" stroke-width="4"/></svg>` },
+            { id: 'apple', color: '#F43F5E', svg: `<svg viewBox="0 0 100 100" class="w-16 h-16 sm:w-20 sm:h-20"><path d="M50 30 C35 18, 15 30, 18 55 C20 78, 40 88, 50 82 C60 88, 80 78, 82 55 C85 30, 65 18, 50 30 Z" fill="currentColor" stroke="#BE123C" stroke-width="4"/></svg>` },
+            { id: 'moon', color: '#C084FC', svg: `<svg viewBox="0 0 100 100" class="w-16 h-16 sm:w-20 sm:h-20"><path d="M65 15 C35 15, 18 38, 18 55 C18 78, 40 90, 68 84 C48 76, 42 58, 45 42 C48 28, 56 20, 65 15 Z" fill="currentColor" stroke="#7E22CE" stroke-width="4"/></svg>` }
+        ];
+        let matchedShadow = 0;
+        function initShadowGame() {
+            matchedShadow = 0;
+            const t = document.getElementById('shadowTargetsRow');
+            const d = document.getElementById('shadowDraggablesRow');
+            t.innerHTML = ''; d.innerHTML = '';
+            const pool = [...SHAPES].sort(() => Math.random() - 0.5).slice(0, 4);
+            const shuf = [...pool].sort(() => Math.random() - 0.5);
+            pool.forEach(it => {
+                const s = document.createElement('div');
+                s.dataset.shapeId = it.id;
+                s.className = "shadow-slot w-20 h-20 sm:w-28 sm:h-28 rounded-3xl bg-slate-100 border-4 border-dashed border-purple-300 flex items-center justify-center transition-all duration-300 text-slate-300";
+                s.innerHTML = it.svg;
+                t.appendChild(s);
+            });
+            shuf.forEach(it => {
+                const c = document.createElement('div');
+                c.dataset.shapeId = it.id;
+                c.style.color = it.color;
+                c.className = "kid-btn w-20 h-20 sm:w-28 sm:h-28 rounded-3xl bg-white border-4 border-purple-400 flex items-center justify-center cursor-grab active:cursor-grabbing touch-none z-20";
+                c.innerHTML = it.svg;
+                enableDrag(c);
+                d.appendChild(c);
+            });
+        }
+        function enableDrag(el) {
+            let sx = 0, sy = 0, cx = 0, cy = 0, dr = false;
+            el.onpointerdown = (e) => {
+                if (el.dataset.locked === 'true') return;
+                dr = true; el.setPointerCapture(e.pointerId);
+                sx = e.clientX - cx; sy = e.clientY - cy;
+                el.style.transition = 'none'; el.style.zIndex = '40';
+                playStepChime();
+            };
+            el.onpointermove = (e) => {
+                if (!dr) return;
+                cx = e.clientX - sx; cy = e.clientY - sy;
+                el.style.transform = `translate(${cx}px, ${cy}px) scale(1.12)`;
+            };
+            el.onpointerup = () => {
+                if (!dr) return;
+                dr = false; el.style.zIndex = '20';
+                const id = el.dataset.shapeId;
+                const slot = document.querySelector(`.shadow-slot[data-shape-id="${id}"]`);
+                const a = el.getBoundingClientRect(), b = slot.getBoundingClientRect();
+                const dist = Math.hypot((a.left + a.width/2) - (b.left + b.width/2), (a.top + a.height/2) - (b.top + b.height/2));
+                if (dist < 95) {
+                    el.dataset.locked = 'true';
+                    el.style.visibility = 'hidden';
+                    slot.style.color = el.style.color;
+                    slot.classList.remove('bg-slate-100', 'border-dashed', 'border-purple-300');
+                    slot.classList.add('bg-emerald-50', 'border-emerald-400', 'scale-105', 'shadow-lg');
+                    spawnSparkleBurst(b.left + b.width/2, b.top + b.height/2, 18);
+                    playHarpNote(880, 0.4, 0.2);
+                    matchedShadow++;
+                    if (matchedShadow === 4) setTimeout(() => triggerWinCelebration('g2_win'), 350);
+                } else {
+                    el.style.transition = 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                    cx = 0; cy = 0; el.style.transform = 'translate(0, 0) scale(1)';
+                    playGentleRetry(); handleRetry();
+                }
+            };
+        }
+
+        /**************************************************************
+         * 9. GAME 3: PATTERN
+         **************************************************************/
+        const P_ITEMS = [
+            { id: 'star', emoji: '⭐', bg: 'bg-amber-100 border-amber-400' },
+            { id: 'heart', emoji: '💖', bg: 'bg-pink-100 border-pink-400' },
+            { id: 'flower', emoji: '🌸', bg: 'bg-purple-100 border-purple-400' },
+            { id: 'crown', emoji: '👑', bg: 'bg-sky-100 border-sky-400' },
+            { id: 'butterfly', emoji: '🦋', bg: 'bg-emerald-100 border-emerald-400' },
+            { id: 'strawberry', emoji: '🍓', bg: 'bg-rose-100 border-rose-400' }
+        ];
+        let currentMissing = null;
+        function initPatternGame() {
+            const w = document.getElementById('trainWrapper'), c = document.getElementById('patternChoices');
+            w.classList.remove('train-depart');
+            w.innerHTML = ''; c.innerHTML = '';
+            const s = [...P_ITEMS].sort(() => Math.random() - 0.5);
+            const [A, B, C] = s;
+            currentMissing = B;
+            const engine = document.createElement('div');
+            engine.className = "flex flex-col items-center shrink-0";
+            engine.innerHTML = `<div class="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-b from-pink-500 to-rose-500 rounded-2xl border-4 border-white shadow-lg flex items-center justify-center text-3xl sm:text-4xl">🚂</div><div class="flex gap-3 -mt-2"><div class="w-5 h-5 rounded-full bg-slate-800 border-2 border-amber-400"></div><div class="w-5 h-5 rounded-full bg-slate-800 border-2 border-amber-400"></div></div>`;
+            w.appendChild(engine);
+            [A, B, A].forEach(it => {
+                const el = document.createElement('div');
+                el.className = "flex flex-col items-center shrink-0";
+                el.innerHTML = `<div class="w-14 h-14 sm:w-16 sm:h-16 ${it.bg} border-4 rounded-2xl shadow-md flex items-center justify-center text-2xl sm:text-3xl">${it.emoji}</div><div class="flex gap-2.5 -mt-2"><div class="w-4 h-4 rounded-full bg-slate-700 border-2 border-amber-300"></div><div class="w-4 h-4 rounded-full bg-slate-700 border-2 border-amber-300"></div></div>`;
+                w.appendChild(el);
+            });
+            const m = document.createElement('div');
+            m.className = "flex flex-col items-center shrink-0";
+            m.innerHTML = `<div id="mysterySlot" class="w-14 h-14 sm:w-16 sm:h-16 bg-white border-4 border-dashed border-purple-500 rounded-2xl flex items-center justify-center text-2xl sm:text-3xl font-black text-purple-500 animate-pulse">؟</div><div class="flex gap-2.5 -mt-2"><div class="w-4 h-4 rounded-full bg-slate-700 border-2 border-amber-300"></div><div class="w-4 h-4 rounded-full bg-slate-700 border-2 border-amber-300"></div></div>`;
+            w.appendChild(m);
+            [A, B, C].sort(() => Math.random() - 0.5).forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = `kid-btn w-16 h-16 sm:w-20 sm:h-20 ${opt.bg} border-4 rounded-3xl flex items-center justify-center text-3xl sm:text-4xl shadow-lg`;
+                btn.textContent = opt.emoji;
+                btn.onclick = (e) => checkPattern(opt, btn, e);
+                c.appendChild(btn);
+            });
+        }
+        function checkPattern(chosen, btn, e) {
+            if (chosen.id === currentMissing.id) {
+                const slot = document.getElementById('mysterySlot');
+                slot.textContent = chosen.emoji;
+                slot.className = `w-14 h-14 sm:w-16 sm:h-16 ${chosen.bg} border-4 rounded-2xl shadow-lg flex items-center justify-center text-2xl sm:text-3xl scale-110 transition`;
+                spawnSparkleBurst(e.clientX, e.clientY, 20);
+                playWinFanfare();
+                setTimeout(() => document.getElementById('trainWrapper').classList.add('train-depart'), 250);
+                setTimeout(() => triggerWinCelebration('g3_win'), 950);
+            } else {
+                btn.classList.add('shake-gentle');
+                setTimeout(() => btn.classList.remove('shake-gentle'), 500);
+                playGentleRetry(); handleRetry();
+            }
+        }
+
+        /**************************************************************
+         * 10. GAME 4: MEMORY
+         **************************************************************/
+        const MEM_ICONS = ['🦄', '🦋', '👑', '🍓', '🐱', '🌈'];
+        let memPairs = 2, flipped = [], matchedP = 0, lockB = false;
+        function changeMemoryDifficulty() {
+            const b = document.getElementById('memDiffBtn');
+            if (memPairs === 2) { memPairs = 3; b.textContent = 'متوسط ⭐⭐'; }
+            else if (memPairs === 3) { memPairs = 4; b.textContent = 'عبقري ⭐⭐⭐'; }
+            else { memPairs = 2; b.textContent = 'سهل ⭐'; }
+            initMemoryGame();
+        }
+        function initMemoryGame() {
+            flipped = []; matchedP = 0; lockB = false;
+            const g = document.getElementById('memoryGrid');
+            g.innerHTML = '';
+            if (memPairs === 2) g.className = "grid grid-cols-2 gap-4 sm:gap-6 w-full max-w-md h-full max-h-[340px]";
+            else if (memPairs === 3) g.className = "grid grid-cols-3 gap-3 sm:gap-5 w-full max-w-xl h-full max-h-[340px]";
+            else g.className = "grid grid-cols-4 gap-3 sm:gap-4 w-full max-w-2xl h-full max-h-[340px]";
+            const icons = MEM_ICONS.slice(0, memPairs);
+            const deck = [...icons, ...icons].sort(() => Math.random() - 0.5);
+            deck.forEach(icon => {
+                const card = document.createElement('div');
+                card.className = "perspective-1000 w-full h-full min-h-[110px] cursor-pointer";
+                card.dataset.icon = icon;
+                card.innerHTML = `<div class="card-inner w-full h-full"><div class="card-face bg-gradient-to-br from-purple-400 via-pink-400 to-rose-400 border-4 border-white shadow-lg flex flex-col items-center justify-center text-white"><span class="text-4xl sm:text-5xl drop-shadow">🌟</span><span class="text-xs font-black mt-1 opacity-90">هيلين</span></div><div class="card-face card-back bg-white border-4 border-emerald-400 shadow-xl text-5xl sm:text-6xl">${icon}</div></div>`;
+                card.onclick = (e) => flipMem(card, e);
+                g.appendChild(card);
+            });
+        }
+        function flipMem(card, e) {
+            if (lockB || card.classList.contains('card-flipped')) return;
+            card.classList.add('card-flipped');
+            playStepChime();
+            flipped.push(card);
+            if (flipped.length === 2) {
+                lockB = true;
+                const [a, b] = flipped;
+                if (a.dataset.icon === b.dataset.icon) {
+                    matchedP++; flipped = []; lockB = false;
+                    spawnSparkleBurst(e.clientX, e.clientY, 18);
+                    playHarpNote(1046.50, 0.45, 0.2);
+                    if (matchedP === memPairs) setTimeout(() => triggerWinCelebration('g4_win'), 500);
+                } else {
+                    setTimeout(() => {
+                        a.classList.remove('card-flipped'); b.classList.remove('card-flipped');
+                        flipped = []; lockB = false;
+                        playGentleRetry();
+                    }, 900);
+                }
+            }
+        }
+
+        /**************************************************************
+         * 11. GAME 5: COUNTING
+         **************************************************************/
+        const C_EMOJIS = ['🦋','🌸','⭐','💖','🍓','🐱','🌈','🦄'];
+        const C_NAMES = ['فراشة','وردة','نجمة','قلب','فراولة','قطة','قوس','حورية'];
+        const AR_NUMS = ['٠','١','٢','٣','٤','٥','٦','٧','٨','٩','١٠'];
+        let countLevel = 1;
+        function initCountingGame() {
+            const objs = document.getElementById('countObjects'), ch = document.getElementById('countChoices');
+            objs.innerHTML = ''; ch.innerHTML = '';
+            const count = Math.min(countLevel, 10);
+            const idx = countLevel % C_EMOJIS.length;
+            const emoji = C_EMOJIS[idx], name = C_NAMES[idx];
+            document.getElementById('countTitle').textContent = `كام ${name} على الشاشة؟`;
+            for (let i = 0; i < count; i++) {
+                const el = document.createElement('div');
+                el.className = 'text-4xl sm:text-6xl number-bounce';
+                el.style.animationDelay = `${i * 0.1}s`;
+                el.textContent = emoji;
+                objs.appendChild(el);
+            }
+            const choices = new Set([count]);
+            while (choices.size < 3) {
+                const off = Math.floor(Math.random() * 5) - 2;
+                const n = count + off;
+                if (n >= 1 && n <= 10) choices.add(n);
+            }
+            [...choices].sort(() => Math.random() - 0.5).forEach(n => {
+                const btn = document.createElement('button');
+                btn.className = 'kid-btn w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-b from-amber-300 to-amber-400 border-4 border-white rounded-3xl flex items-center justify-center text-4xl sm:text-5xl font-black text-white shadow-lg';
+                btn.textContent = AR_NUMS[n];
+                btn.onclick = (e) => checkCount(n, count, btn, e);
+                ch.appendChild(btn);
+            });
+        }
+        function checkCount(chosen, correct, btn, e) {
+            if (chosen === correct) {
+                spawnSparkleBurst(e.clientX, e.clientY, 20);
+                playWinFanfare();
+                setTimeout(() => triggerWinCelebration('g5_win'), 700);
+            } else {
+                btn.classList.add('shake-gentle');
+                setTimeout(() => btn.classList.remove('shake-gentle'), 500);
+                playGentleRetry(); handleRetry();
+            }
+        }
+        function speakCountPrompt() {
+            const name = C_NAMES[countLevel % C_NAMES.length];
+            speakText(`عُدي ال${name} يا هيلين.. كام واحد شايفة؟`);
+        }
+
+        /**************************************************************
+         * 12. GAME 6: COLORS
+         **************************************************************/
+        const COLORS = [
+            { name: 'أحمر', hex: '#EF4444', emoji: '🍎' },
+            { name: 'أزرق', hex: '#3B82F6', emoji: '🫐' },
+            { name: 'أخضر', hex: '#22C55E', emoji: '🥝' },
+            { name: 'أصفر', hex: '#FBBF24', emoji: '🍋' },
+            { name: 'بنفسجي', hex: '#A855F7', emoji: '🍇' },
+            { name: 'وردي', hex: '#EC4899', emoji: '🌸' }
+        ];
+        let currentColor = null;
+        function initColorGame() {
+            const ch = document.getElementById('colorChoices'), pv = document.getElementById('colorPreview');
+            ch.innerHTML = '';
+            const s = [...COLORS].sort(() => Math.random() - 0.5);
+            currentColor = s[0];
+            const opts = s.slice(0, 4);
+            if (!opts.find(c => c.name === currentColor.name)) opts[Math.floor(Math.random() * 4)] = currentColor;
+            pv.style.backgroundColor = currentColor.hex;
+            document.getElementById('colorTitle').textContent = `فين اللون ${currentColor.name}؟`;
+            opts.sort(() => Math.random() - 0.5).forEach(c => {
+                const btn = document.createElement('button');
+                btn.className = 'kid-btn w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-white shadow-xl flex items-center justify-center text-3xl sm:text-4xl';
+                btn.style.backgroundColor = c.hex;
+                btn.textContent = c.emoji;
+                btn.onclick = (e) => checkColor(c, btn, e);
+                ch.appendChild(btn);
+            });
+        }
+        function checkColor(c, btn, e) {
+            if (c.name === currentColor.name) {
+                spawnSparkleBurst(e.clientX, e.clientY, 20);
+                playWinFanfare();
+                setTimeout(() => triggerWinCelebration('g6_win'), 700);
+            } else {
+                btn.classList.add('shake-gentle');
+                setTimeout(() => btn.classList.remove('shake-gentle'), 500);
+                playGentleRetry(); handleRetry();
+            }
+        }
+        function speakColorPrompt() {
+            if (currentColor) speakText(`فين اللون ${currentColor.name} يا هيلين؟`);
+        }
+
+        /**************************************************************
+         * 13. GAME 7: ANIMALS
+         **************************************************************/
+        const ANIMALS = [
+            { name: 'القطة', sound: 'مواء', emoji: '🐱' },
+            { name: 'الكلب', sound: 'هوهو', emoji: '🐶' },
+            { name: 'البقرة', sound: 'مووو', emoji: '🐮' },
+            { name: 'الخروف', sound: 'ماع', emoji: '🐑' },
+            { name: 'الديك', sound: 'كوكوكو', emoji: '🐓' },
+            { name: 'البطة', sound: 'كواك كواك', emoji: '🦆' },
+            { name: 'الأسد', sound: 'أررر', emoji: '🦁' },
+            { name: 'الفيل', sound: 'پپپ', emoji: '🐘' }
+        ];
+        let currentAnimal = null;
+        function initAnimalGame() {
+            const ch = document.getElementById('animalChoices');
+            ch.innerHTML = '';
+            const s = [...ANIMALS].sort(() => Math.random() - 0.5);
+            currentAnimal = s[0];
+            const opts = s.slice(0, 4);
+            if (!opts.find(a => a.name === currentAnimal.name)) opts[Math.floor(Math.random() * 4)] = currentAnimal;
+            document.getElementById('animalTitle').textContent = `مين اللي بيقول ${currentAnimal.sound}؟`;
+            document.getElementById('animalSoundHint').textContent = '🎵';
+            opts.sort(() => Math.random() - 0.5).forEach(a => {
+                const btn = document.createElement('button');
+                btn.className = 'kid-btn w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-b from-cyan-100 to-white border-4 border-cyan-400 rounded-3xl flex items-center justify-center text-4xl sm:text-5xl shadow-lg';
+                btn.textContent = a.emoji;
+                btn.onclick = (e) => checkAnimal(a, btn, e);
+                ch.appendChild(btn);
+            });
+            setTimeout(() => speakText(`مين اللي بيقول ${currentAnimal.sound}؟`), 300);
+        }
+        function checkAnimal(a, btn, e) {
+            if (a.name === currentAnimal.name) {
+                spawnSparkleBurst(e.clientX, e.clientY, 20);
+                playWinFanfare();
+                setTimeout(() => triggerWinCelebration('g7_win'), 700);
+            } else {
+                btn.classList.add('shake-gentle');
+                setTimeout(() => btn.classList.remove('shake-gentle'), 500);
+                playGentleRetry(); handleRetry();
+            }
+        }
+        function speakAnimalPrompt() {
+            if (currentAnimal) speakText(`مين الحيوان اللي بيقول ${currentAnimal.sound}؟`);
+        }
+
+        /**************************************************************
+         * 14. RESIZE + BOOT
+         **************************************************************/
+        window.addEventListener('resize', () => {
+            if (currentGame === 1) {
+                const c = document.getElementById('traceContainer');
+                const cv = document.getElementById('traceCanvas');
+                if (c && cv) {
+                    cv.width = c.clientWidth; cv.height = c.clientHeight;
+                    buildTracePath(cv.width, cv.height); drawTrace();
+                }
+            }
+        });
+
+        window.addEventListener('load', async () => {
+            updateStarUI();
+            refreshVoiceList();
+            await loadAudioCache();
+        });
+    </script>
+</body>
+</html>
